@@ -1,0 +1,39 @@
+/* pages/index/fourth/fourth.wxss */
+@import "../step/step.wxss";
+@import "../first/first.wxss";
+
+.container{
+  padding: 0;
+}
+.fourth_bg{
+  background: #f5f5f5;
+}
+.fourth_title image{
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 10rpx;
+}
+.fourth_title text{
+  font-size: 32rpx;
+  color: #ee756b;
+  margin-top: -3rpx;
+}
+.fourth_title{
+  display: flex;
+  flex-direction: row;
+  width: 200rpx;
+  margin: 0 auto;
+  margin-top: 56rpx;
+}
+.fourth_box{
+  border-top: 1rpx solid #ccc;
+}
+.fourth_text{
+  width: 623rpx;
+  margin: 0 auto;
+  line-height: 56rpx;
+  font-weight: 600;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  color: #4c4c4c;
+}

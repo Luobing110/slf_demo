@@ -1,0 +1,94 @@
+/* pages/index/third/third.wxss */
+@import "../step/step.wxss";
+@import "../first/first.wxss";
+
+.container {
+  padding: 0;
+}
+
+.upload_box {
+  background: white;
+  border-top: 1rpx solid #ccc;
+  width: 100%;
+}
+
+.text_box text {
+  font-size: 24rpx;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+
+.text_box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+}
+
+.photo_box {
+  width: 428rpx;
+  height: 238rpx;
+  background: #3e1613;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.blur_bg {
+  width: 296rpx;
+  height: 184rpx;
+  margin-top: 28rpx;
+}
+
+.id_photo {
+  width: 278rpx;
+  height: 172rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -86rpx;
+  margin-left: -138rpx;
+}
+
+.clear_btn {
+  width: 100rpx;
+  height: 48rpx;
+  background: #df6d64;
+  border-radius: 6rpx;
+  color: white;
+  text-align: center;
+  font-size: 22rpx;
+  line-height: 48rpx;
+   margin-left: 27rpx;
+}
+
+.upload_btn {
+  width: 253rpx;
+  height: 48rpx;
+  background: #df6d64;
+  border-radius: 6rpx;
+  color: white;
+  text-align: center;
+  line-height: 48rpx;
+  font-size: 22rpx;
+   margin-left: 27rpx;
+}
+.upload_btns{
+  display: flex;
+  width: 426rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+}
+.upload_item{
+  border-bottom: 1rpx solid #ccc;
+  margin-bottom:40rpx; 
+}
+.zx_photo{
+  height: 618rpx;
+   border: 1rpx solid #3e1613; 
+}
+.zx_bg{
+  height: 618rpx;
+  width: 428rpx;
+}

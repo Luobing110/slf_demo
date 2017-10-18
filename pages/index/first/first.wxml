@@ -1,0 +1,75 @@
+<!--pages/index/first/first.wxml-->
+<view class="contaner">
+  <!--广告部分-->
+  <view class="adver">
+    <view class=" center adver_content">
+      <image src="/pages/images/adr.jpg"></image>
+    </view>
+  </view>
+  <view class="put_content">
+    <view class="title_t">
+      <image src="/pages/images/icon_1.jpg"></image>
+      <text> 贷款申请</text>
+    </view>
+    <view class="center">
+      <view class="section">
+        <text>姓名</text>
+        <input placeholder="请输入您的姓名" bindinput="userNameInput" name="user_name" />
+        <view class="clear"></view>
+      </view>
+      <view class="section">
+        <text>性别</text>
+        <radio-group bindchange="radioChange" class="radio-group">
+          <label wx:for="{{items}}">
+            <radio value="{{item.sex}}" checked="{{item.checked}}"/>
+            <text class="sex">{{item.sex}}</text>
+          </label>
+        </radio-group>
+        <view class="clear"></view>
+      </view>
+       <view class="section">
+        <text>身份证号</text>
+        <input placeholder="请输入您的身份证号" bindinput="userIdInput" name="user_id" type="number"/>
+        <view class="clear"></view>
+      </view>
+      <view class="section">
+        <text>月薪</text>
+        <picker mode="selector" value="{{index}}" bindchange="bindPickerChange" range="{{array}}">
+          <view class="selec_box">
+             {{objectArray[index].name}} 
+          </view>
+        </picker>
+        <view class="clear"></view>
+      </view>
+      <button class="tj_btn" bindtap="submitBtnClick">提交申请</button>
+      <view class="tishi">
+        <label bindtap="checkA">
+          <image src="/pages/images/select.jpg" wx:if="{{check}}"></image> 
+          <image src="/pages/images/no_selec.jpg" wx:else></image>
+        </label> 已阅读 <text bindtap="bindXieyi">《隐私条款》</text>隐私信息将严格保密
+      </view>
+    </view>
+  </view>
+  <!--产品特点-->
+  <view class="put_content ">
+    <view class="title_t">
+      <image src="/pages/images/cha_icon.jpg"></image>
+      <text> 产品特点</text>
+    </view>
+    <view class="center pru_cha">
+      <image class="bg" src="/pages/images/bg.jpg"></image>
+      <view class="pru_box pru1">
+        <text class="pru_box_title">省时省力</text>
+        <text class="pru_box_text">1分钟申请，申请简单方便</text>
+      </view>
+      <view class="pru_box pru2">
+        <text class="pru_box_title">极速审批</text>
+        <text class="pru_box_text">最快30分钟审批</text>
+      </view>
+      <view class="pru_box pru3">
+        <text class="pru_box_title">极速放贷</text>
+        <text class="pru_box_text">最快当天放款</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,82 @@
+<!--pages/index/second/second.wxml-->
+<import src="../step/step.wxml" />
+<view class="container">
+  <template is="step" data="{{sss,ttt,fff}}"></template>
+  <!--内容输入区域-->
+  <view class="put_content" style="border-top:1rpx solid #cccccc">
+    <view class="center">
+      <view class="section">
+        <text>手机号</text>
+        <input placeholder="手机号码"  type="number"  bindblur="phoneBlur"  bindinput="bindPhone" maxlength="11" class="input_text"/>
+        <text class="red_ts">{{infoMess}}</text>
+        <view class="clear"></view>
+      </view>
+      <!-- <view class="section">
+        <text>验证码</text>
+        <view class="yzm">
+          <input bindblur="noteBlur"  maxlength="4"/>
+        </view>
+        <view class="yzm" bindtap="yzmV">1235</view>
+         <text class="red_ts">{{infoNote}}</text>
+        <view class="clear"></view>
+      </view> -->
+      <view class="section">
+        <text>短信验证</text>
+        <view class="yzm">
+          <input bindinput="noteMess"  bindblur="noteBlur" disabled="{{state}}"/>
+        </view>
+        <view class="yzm yzm1" bindtap="setVerify">{{VerifyCode}}</view>
+         <text class="red_ts" style="margin-left:15rpx">{{infoN}}</text>
+        <view class="clear"></view>
+      </view>
+      <view class="section">
+        <text>贷款产品</text>
+        <picker mode="selector" range="{{array}}" value="{{index}}" bindchange="bindPru">
+          <view class="selec_box">
+            {{array[index]}}
+          </view>
+        </picker>
+        <view class="clear"></view>
+      </view>
+      
+      <view class="section">
+        <text>贷款金额</text>
+        <input placeholder="请输入贷款金额" bindblur="bindNumblur" type="digit" bindinput="bindIputN" class="input_text"/>
+        <text class="red_ts">{{infoNum}}</text>
+        <view class="clear"></view>
+      </view>
+      <view class="section">
+        <text>推 荐 码</text>
+        <input placeholder="如有推荐码请输入" />
+        <view class="clear"></view>
+      </view>
+      <button class="tj_btn" bindtap="bindNext">下一步</button>
+    </view>
+  </view>
+  <!-- 成品说明 -->
+  <view class="pro_des">
+    <view class="center">
+      <view class="pro_des_title">
+        <image src="/pages/images/des_icon.jpg"></image>
+        <text>产品说明</text>
+      </view>
+      <view class="pro_des_box">
+        <view class="pro_des_box_title">{{objectArray[index].title}}</view>
+        <view class="pro_lists">
+          <view class="pro_list">
+            <image src="/pages/images/money_icon.jpg"></image>
+            <text>{{objectArray[index].num}}</text>
+          </view>
+          <view class="pro_list">
+            <image src="/pages/images/user_icon.jpg"></image>
+            <text>{{objectArray[index].record}}</text>
+          </view>
+          <!-- <view class="pro_list">
+            <image src="/pages/images/time_icon.jpg"></image>
+            <text>{{objectArray[index].report}}</text>
+          </view> -->
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

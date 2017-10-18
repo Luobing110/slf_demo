@@ -1,0 +1,39 @@
+<template name="step">
+  <view class="loading">
+    <view class="loading_box">
+      <view class="step_box">
+        <view class="step">
+          <label wx:if="{{sss==4}}">
+            <image src="/pages/images/complete_icon.png"></image>
+            <text class="complete_text">身份核实</text>
+          </label>
+           <label wx:else >
+            <image src="/pages/images/no_complete_icon.png"></image>
+            <text class="no_complete_text">身份核实{{sss}}</text>
+          </label>   
+        </view>
+        <view class="step">
+        <label wx:if="{{ttt==4}}">
+           <image src="/pages/images/complete_icon.png"></image>
+          <text class="complete_text">上传财务资料</text>
+        </label>
+        <label wx:else>
+         <image src="/pages/images/no_complete_icon.png"></image>
+          <text class="no_complete_text" bindtap="dddd">上传财务资料</text>
+        </label> 
+        </view>
+          <view class="step">
+            <label wx:if="{{fff==4}}">
+              <image src="/pages/images/complete_icon.png"></image>
+              <text class="complete_text">等待审批、面签放款</text>
+            </label>
+            <label wx:else>
+              <image src="/pages/images/no_complete_icon.png"></image>
+              <text class="no_complete_text">等待审批、面签放款</text>
+             </label>
+          </view>
+      </view>
+      <view class="line"></view>
+    </view>
+  </view>
+</template>

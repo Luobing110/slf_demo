@@ -1,0 +1,8 @@
+/* pages/help/help.wxss */
+.help{
+  font-size: 30rpx;
+  margin: 0 15rpx 0 15rpx;
+}
+.help text{
+  line-height: 50rpx;
+}

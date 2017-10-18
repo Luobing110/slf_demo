@@ -1,0 +1,86 @@
+/* pages/index/second/second.wxss */
+@import "../step/step.wxss";
+@import "../first/first.wxss";
+.container{
+  padding: 0;
+}
+.yzm{
+  width: 147rpx;
+  height: 60rpx;
+
+  border: 1rpx solid #cccccc;
+  display: block;
+  float: left;
+  margin-top: 14rpx;
+  margin-left: 15rpx;
+}
+.input_text{
+  width: 250rpx;
+  display: block;
+  float: left;
+}
+.yzm input{
+  height: 100%
+}
+.yzm1{
+  background: #df6d64;
+  border: none;
+  color: white;
+  height: 62rpx;
+  width: 180rpx;
+  font-size: 24rpx;
+  line-height: 64rpx;
+  text-align: center;
+  border-radius: 2rpx;
+}
+.pro_des_title image{
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.pro_des_title text{
+  font-size: 24rpx;
+}
+.pro_des_title{
+  height: 62rpx;
+  border-bottom: 4rpx solid #cccccc;
+  line-height: 62rpx;
+}
+.pro_des_box{
+  width: 570rpx;
+  height: 175rpx;
+  border: 2rpx solid #e09a94;
+  margin: 0 auto;
+  margin-top: 24rpx;
+  background: white;
+}
+.pro_des_box_title{
+  height: 54rpx;
+  background: #e09a94;
+  text-align: center;
+  font-size: 24rpx;
+  color: white;
+  line-height: 54rpx;
+}
+
+.pro_list image{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 13rpx;
+}
+.pro_list{
+  display: flex;
+  flex-direction: row;
+  font-size: 24rpx;
+  margin-top: 17rpx;
+}
+.pro_lists{
+  margin-left:12rpx;
+}
+.red_ts{
+  color: red;
+}
+.pro_des{
+  margin-bottom: 250rpx;
+}

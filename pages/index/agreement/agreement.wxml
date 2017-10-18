@@ -1,0 +1,34 @@
+<!--pages/index/agreement/agreement.wxml-->
+<view class="help">
+  <view class="xieyi">
+    <text class="title">一、声明</text>
+    <text class="content">“盛联丰快乐贷”（以下简称“本项目”）是指由深圳市盛联丰小额贷款有限公司（以下简称“本公司”）推出的贷款项目，旨在为工薪阶层提供贷款融资服务。</text>
+  </view>
+  <view class="xieyi">
+    <text class="title">二、个人信息的收集</text>
+    <text class="content">本项目收集个人信息是用于本公司向您提供服务和提高服务品质。若您未能向本公司提供该等数据，可能导致本公司无法为您提供贷款服务。</text>
+  </view>
+
+  <view class="xieyi">
+    <text class="title">三、个人信息的授权</text>
+    <text class="content">您授权本公司，除法律另有规定之外，将您提供给本公司的信息、享受本公司服务产生的信息（包括使用本产品之前提供和产生的信息）以及本公司根据本条约定查询、收集的信息，用于本公司及其服务必要委托的合作伙伴为您提供服务、推荐产品、开展市场调查与信息数据分析。 </text>
+    <text class="content"> 为确保您信息的安全，本公司及合作伙伴对上述信息负有保密义务，并采取各种措施保证信息安全。 </text>
+  </view>
+  <view class="xieyi">
+    <text class="title">四、个人信息的披露</text>
+    <text class="content"> 本公司对您提供的信息严格保密，除具备下列情形之一外，不会向任何外部机构披露您的信息：
+          （1）经过您事先同意而披露；
+          （2）应法律法规的要求而披露；
+          （3）应政府部门、本公司的监管机构或其他有权机构的要求而披露。
+    </text>
+  </view>
+  <view class="xieyi">
+    <text class="title">五、个人信息的保护</text>
+    <text class="content">安全是本项目的首要要求。本公司将在任何时候竭力保证您的个人信息不回被人擅自或意外取得、处理或删除。本公司将采取各种合适的物、电子和管理方面的措施来保护您的个人信息，以实现本公司对信息安全的承诺。 </text>
+    <text class="content">  本项目设有严格的安全系统，以防止未经授权的任何人获取您的信息。任何第三方，在得到本公司许可获取您的个人信息时，都被要求严格遵守保密责任。 </text>
+  </view>
+  <view class="xieyi">
+    <text class="title">六、重要事项</text>
+    <text class="content">您进入本项目界面并完成填写相关信息，即视为您同意遵守上述条款。</text>
+  </view>
+</view>

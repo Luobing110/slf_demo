@@ -1,0 +1,71 @@
+<!--pages/index/third/third.wxml-->
+<import src="../step/step.wxml" />
+<view class="container">
+  <template is="step" data="{{sss,ttt,fff}}"></template>
+  <view class="upload_box">
+    <view class="upload_item">
+      <view class="text_box">
+        <text>请确保您的二代身份证处于有效期内</text>
+        <text>1、请按图中角度进行拍摄   2、身份证尽量瞄准聚焦</text>
+      </view>
+      <view class="photo_box">
+        <image class="blur_bg" src="/pages/images/blur_bg.png"></image>
+        <image class="id_photo" src="{{tempFilePathsZ}}" wx:if="{{tempFilePathsZ}}"></image>
+        <image class="id_photo" src="/pages/images/id_photo1.jpg " wx:else></image>
+      </view>
+      <view class="upload_btns">
+        <view class="clear_btn" bindtap="clearPicZ">清除</view>
+        <view class="upload_btn" bindtap="chooseimageZ">上传身份证正面图</view>
+      </view>
+    </view>
+    <view class="upload_item">
+      <view class="photo_box">
+        <image class="blur_bg" src="/pages/images/blur_bg.png"></image>
+        <image class="id_photo" src="{{tempFilePathsF }}" wx:if="{{tempFilePathsF}}"></image>
+        <image class="id_photo" src="/pages/images/id_photo2.jpg" wx:else></image>
+      </view>
+      <view class="upload_btns">
+        <view class="clear_btn" bindtap="clearPicF">清除</view>
+        <view class="upload_btn" bindtap="chooseimageF">上传身份证反面图</view>
+      </view>
+    </view>
+    <!-- <view class="upload_item">
+      <view class="text_box">
+        <text>上传"个人征信报告”的截图</text>
+      </view>
+      <view class="photo_box zx_photo">
+        <image class="zx_bg" src="{{tempFilePathsR}}" mode="aspecFill" wx:if="{{tempFilePathsR}}"></image>
+        <image class="zx_bg" src="/pages/images/zx_bg.jpg" wx:else></image>
+      </view>
+      <view class="upload_btns">
+        <view class="clear_btn" bindtap="clearPicR">清除</view>
+        <view class="upload_btn" bindtap="chooseimageR">上传征信报告</view>
+      </view>
+    </view> -->
+     <view class="upload_item">
+      <view class="text_box">
+        <text wx:if="{{ objectId==0}}">上传“社保记录”截图</text>
+        <text wx:elif="{{ objectId==1}}">上传“公积金缴纳记录”截图</text>
+        <text wx:elif="{{ objectId==2}}">上传“寿险保单”截图</text>
+        <text wx:else="{{ objectId==3}}">上传“工资流水”截图</text>
+      </view>
+      <view class="photo_box zx_photo">
+        <image class="zx_bg" src="{{tempFilePathsR}}" mode="aspecFill" wx:if="{{tempFilePathsR}}"></image>
+        <label wx:else>
+          <image class="zx_bg" src="/pages/images/sb.jpg" wx:if="{{ objectId==0}}"></image>
+          <image class="zx_bg" src="/pages/images/gjj.jpg" wx:elif="{{ objectId==1}}"></image>
+          <image class="zx_bg" src="/pages/images/bd.jpg" wx:elif="{{ objectId==2}}"></image>
+          <image class="zx_bg" src="/pages/images/lius.jpg" wx:elif="{{ objectId==3}}"></image>
+        </label>
+      </view>
+      <view class="upload_btns">
+        <view class="clear_btn" bindtap="clearPicR">清除</view>
+        <view class="upload_btn" bindtap="chooseimageR" wx:if="{{objectId==0}}">上传社保记录</view>
+        <view class="upload_btn" bindtap="chooseimageR" wx:elif="{{objectId==1}}">上传公积金缴纳记录</view>
+        <view class="upload_btn" bindtap="chooseimageR" wx:elif="{{objectId==2}}">上传寿险保单</view>
+        <view class="upload_btn" bindtap="chooseimageR" wx:else="{{objectId==3}}">上传工资流水截图</view>
+      </view>
+    </view> 
+    <button class="tj_btn" bindtap="done">确认</button>
+  </view>
+</view>

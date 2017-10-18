@@ -1,0 +1,19 @@
+/* pages/index/agreement/agreement.wxss */
+.help{
+  font-size: 28rpx;
+  margin: 20rpx 15rpx 0 15rpx;
+}
+.help text{
+  line-height: 50rpx;
+}
+.xieyi{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+}
+.help .xieyi .title{
+  font-size: 32rpx;
+}
+.help .xieyi .content{
+  text-indent:40rpx;
+}

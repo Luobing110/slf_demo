@@ -1,0 +1,15 @@
+<!--pages/index/fourth/fourth.wxml-->
+<import src="../step/step.wxml" />
+<view class="fourth_bg">
+  <template is="step" data="{{sss,ttt,fff}}"></template>
+</view>
+<view class="fourth_box">
+  <view class="fourth_title">
+    <image src="/pages/images/gou.jpg"></image>
+    <text>申请成功</text>
+  </view>
+  <view class="fourth_text">
+    您已申请成功！稍后，会有业务经理与您电话联系，告知初步审批结果。如初审成功，请您前往本公司，核实原文件后签约并放款！
+  </view>
+
+</view>

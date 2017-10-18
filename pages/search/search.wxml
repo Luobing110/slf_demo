@@ -1,0 +1,43 @@
+<!--pages/search/search.wxml-->
+<view class="center">
+  <view class="phone_input">
+    <view class="box">
+      <text>手机号码</text>
+      <input placeholder="请输入您的手机号码" bindinput="seachPhone" value="{{phoneNumber}}" maxlength="11" />
+      <button bindtap="seachBtn">查询</button>
+    </view>
+  </view>
+  <!-- <view class="table"  wx:if="{{ks}}">
+    <view class="tr_top" >
+      <view class="th">申请时间</view>
+      <view class="th">申请金额</view>
+      <view class="th">贷款期限</view>
+      <view class="th">当前状态</view>
+    </view>
+
+    <block wx:for="{{posts_key}}">
+      <view class="tr">
+        <view class="td">{{item.a_time}}</view>
+        <view class="td">{{item.lo_money}}</view>
+        <view class="td">{{item.term_loan}}</view>
+        <view class="td"wx:if="{{item.aops == 0}}" >未通过</view>
+      </view>
+    </block>
+  </view> -->
+   <view class="table">
+    <view class="tr_top" >
+      <view class="th">申请时间</view>
+      <view class="th">申请金额</view>
+      <view class="th">贷款期限</view>
+      <view class="th">当前状态</view>
+    </view>
+    <block wx:for="{{posts_key}}">
+      <view class="tr">
+        <view class="td">{{item.a_time}}</view>
+        <view class="td">{{item.lo_money}}</view>
+        <view class="td">{{item.number}}/{{item.term_loan}}</view>
+        <view class="td">{{item.re_state}}</view>
+      </view>
+    </block>
+  </view>
+</view>

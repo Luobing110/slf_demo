@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/first/first",
+    "pages/index/second/second",
+    "pages/index/third/third",
+    "pages/index/fourth/fourth",
+    "pages/help/help",
+    "pages/logs/logs",
+    "pages/index/agreement/agreement"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ee8e86",
+    "navigationBarTitleText": "在线申请",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "selectedColor": "#ee8e86",
+    "backgroundColor": "#f9f3f3",
+    "list": [
+      {
+        "pagePath": "pages/index/first/first",
+       
+        "text": "首页",
+        "iconPath": "pages/images/index_icon.jpg",
+        "selectedIconPath": "pages/images/index_icon1.jpg"
+      },
+   
+      {
+        "pagePath": "pages/help/help",
+        "text": "帮助",
+        "iconPath": "pages/images/help_icon.jpg",
+        "selectedIconPath": "pages/images/help_icon1.jpg"
+      }   
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+.loading {
+  height: 160rpx;
+ 
+}
+.loading_box {
+  width: 720rpx;
+  margin: 0 auto;
+   height: 88rpx;
+   position: relative;
+}
+.line {
+  width: 100%;
+  height: 4rpx;
+  background: #ee8e86;
+  position: absolute;
+  top: 61rpx;
+  z-index: 99
+}
+.step image {
+  width: 54rpx;
+  height: 54rpx;
+  margin: 0 auto;
+}
+.step label{
+  display: flex;
+  flex-direction: column;
+  width: 232rpx;
+  text-align: center;
+  margin-right: 6rpx
+}
+.step text {
+  font-size: 22rpx;
+  
+}
+.no_complete_text {
+  font-weight:lighter;
+  color:#878787;
+  margin-top: 10rpx;
+}
+.complete_text {
+  font-weight: bold;
+  color:#ee8e86;
+   margin-top: 10rpx;
+}
+.step_box {
+  display: flex;
+  flex-direction: row;
+  top: 37rpx;
+  z-index: 100;
+  position: absolute
+}
